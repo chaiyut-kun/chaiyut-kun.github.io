@@ -1,0 +1,75 @@
+.AllAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.about{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Headabout{
+    transition: 0.5s;
+    color:  #F5B041 ;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+.describe{
+
+   display: block;
+   /* border: 1px solid black; */
+   text-align: center;
+}
+
+.describe2{
+    color:  #F5B041;
+    display: block;
+    /* border: 1px solid black; */
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.skills{
+    margin: 0 100px;
+    display: block;
+    /* border: 1px solid black;  */
+}
+
+.head-skills{
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.all-skills{
+    font-size: 20px;
+    /* border:1px solid black; */
+    margin-left: 100px;
+    line-height: 35px;
+    
+}
+
+
+
+.all-skills img{
+    width: 3%;
+    position: relative;
+    top: 5px;
+    margin-right: 2px ;
+
+}
+
+
+
