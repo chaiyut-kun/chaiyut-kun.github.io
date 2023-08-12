@@ -1,18 +1,20 @@
-// let answer = "picoCTF{1234}"
+let answer = "picoCTF{1234}"
+let pass = 'admin'
 
 
-// function checkBool(){
-//     let a = prompt("Enter your flag")
-//     if (a == answer){
-//         alert("Your flag is True")
-//     }
-//     else{
-//         alert("Your flag is False")
-//         return checkBool();
-//     }
-// }
+function checkBool(){
+    let a = prompt("Enter your flag")
+    let b = prompt("Enter your pass")
+    if (a == answer && b == pass){
+        alert("Your flag is True")
+    }
+    else{
+        alert("Your flag is False")
+        return checkBool();
+    }
+}
 
-// checkBool();
+checkBool();
 
 
 let aboutME = document.getElementById('aboutME')
