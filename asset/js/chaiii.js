@@ -3,8 +3,8 @@ let pass = 'admin'
 
 
 function checkBool(){
-    let a = prompt("Enter your flag")
-    let b = prompt("Enter your pass")
+    let a = prompt("Enter your flag \"The flag is ' picoCTF{1234} '\" ")
+    let b = prompt("Enter your pass \"password is ' admin ' \"")
     if (a == answer && b == pass){
         alert("Your flag is True")
     }

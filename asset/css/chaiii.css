@@ -9,7 +9,6 @@ html {
 }
 
 body{
-    margin : 0 310px;
     height: 1000px;
     background-color: white;
     /* border: 1px solid black; */
@@ -89,5 +88,41 @@ nav a{
     display: flex;
     list-style-type: none;
     justify-content: space-between;
+    
+}
+
+
+main{
+    border: 1px solid black;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    a{
+        font-size: 12px;
+    }
+
+    .text-right-content{
+
+        font-size: .5rem;
+        
+    }
+    
+    .img-cat a img{
+        width: 80%;
+        height: 60%;
+    }
+    .img-cat{
+        position: relative;
+        left: 20px;
+        top: 30px;
+    }
+    
+    ul li{
+        margin-right:10px ;
+    }
     
 }
