@@ -92,6 +92,17 @@ nav a{
 }
 
 
+.Ligth{
+    content: url(/asset/img/images-removebg-preview\ \(1\).png);
+}
+
+.Dark{
+    background-color: #2A2254;
+}
+
+
+
+
 main{
     /* border: 1px solid black; */
     max-width: 1000px;
@@ -111,18 +122,14 @@ main{
         
     }
     
-    .img-cat a img{
-        width: 80%;
-        height: 60%;
-    }
-    .img-cat{
-        position: relative;
-        left: 20px;
-        top: 30px;
-    }
+    
     
     ul li{
         margin-right:10px ;
     }
+
+    
     
 }
+
+

@@ -14,25 +14,48 @@ function checkBool(){
     }
 }
 
-checkBool();
 
-
+let body = document.querySelector('body')
 let aboutME = document.getElementById('aboutME')
 let descibe1 = document.getElementById('describe1')
 let descibe2 = document.getElementById('describe2')
-function toAbout(){
-    aboutME.classList.add('Headabout')
-    descibe1.classList.remove('describe')
-    descibe1.classList.add('describe2')
-    descibe2.classList.remove('describe')
-    descibe2.classList.add('describe2')
+
+
+let theme = document.getElementById('theme')
+theme.addEventListener('click', changeTheme)
+let themeImg = theme.querySelector('img')
+let nav = document.getElementById('navigation')
+
+
+function changeTheme(){
+
+    body.classList.toggle('Dark')
+    checkTheme()
     
     
 }
 
-// function toggle(){
-//     togglecolo.classList.toggle('addcolor');
-//     check_toggle();
-//     contains();
+
+function checkTheme(){
+
+    let check = body.classList.contains('Dark')
+    if (check){
         
-// }
+        themeImg.src = '/asset/img/day.png'
+        nav.querySelectorAll('a').forEach((e) => e.style.color = '#E8E5F5')
+        body.querySelectorAll('p').forEach((e) => e.style.color = '#E8E5F5')
+        body.querySelectorAll('h1').forEach((e) => e.style.color = '#E8E5E5')
+        body.querySelectorAll('h3').forEach((e) => e.style.color = '#E8E5E5')
+        
+        
+    }
+    else{
+        nav.querySelectorAll('a').forEach((e) => e.style.color = '#2A2254')
+        body.querySelectorAll('p').forEach((e) => e.style.color = '#2A2254')
+        body.querySelectorAll('h1').forEach((e) => e.style.color = '#2A2254')
+        body.querySelectorAll('h3').forEach((e) => e.style.color = '#2A2254')
+        themeImg.src = '/asset/img/images-removebg-preview (1).png'
+        // themeImg.style.backgroundColor = ''
+        
+    }
+}
