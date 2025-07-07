@@ -25,10 +25,9 @@ p {
   justify-content: center;
   align-items: center;
 
-  /* border: 1px solid red; */
-  
   p {
-    width: 300px;
+    /* border: 1px solid red; */
+    width: 300jpx;
     text-align: center;
   }
   
@@ -37,4 +36,18 @@ p {
     width:  80px;
     height: 80px;
   }
+}
+
+
+
+/* @========= Responsive =========@ */
+
+/* @========= Responsive 1200 width =========@ */
+
+@media only screen and (max-width: 1200px){
+
+  .inst-h3 {
+    text-align: center;
+  }
+  
 }
