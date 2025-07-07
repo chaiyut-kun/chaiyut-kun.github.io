@@ -18,13 +18,12 @@ p {
   width: 500px;
 }
 
-.inst-img {
+.inst-container {
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
 
   /* border: 1px solid red; */
   
@@ -38,6 +37,13 @@ p {
     
     width:  100px;
     height: 100px;
+  }
+}
+
+.work-container {
+  img {
+    width:  200px;
+    height: 200px;
   }
 }
 
