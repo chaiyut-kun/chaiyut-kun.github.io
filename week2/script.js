@@ -3,7 +3,7 @@ const input2 = document.getElementById('input2')
 const result = document.getElementById('result')
 
 let numStr = ""
-
+let opts = ['+','-','*','/']
 function calAdd(opt) {
     result.value = eval(opt)
 }
@@ -23,6 +23,11 @@ function passNum(n) {
         // input1.value = numStr
     }
     else {
+        if (opts.includes(numStr.at(numStr.length) , numStr.length)){
+            console.log("eiei cannot to that")
+        }
+        lastIndex = numStr.length
+        console.log()
         numStr+= n
     }
     input1.value = numStr

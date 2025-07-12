@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello My Friend!</title>
     <link rel="stylesheet" href="style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -13,33 +13,39 @@
     
     
     <div class="container">
-        <h1 class="mb-3 mt-5">Welcome To My First page at Frontend web programming class!🦊</h1>
+        <h1 id="welcome-h1" class="mb-1 mt-3">Welcome To My First page at Frontend web programming class🦊</h1>
 
-        <section class="row">
+        <section class="row self-section">
             <!-- @left describe myself -->
-            <div class="ubuntu-regular col  mt-5 ps-5 pt-5">
+            <div class="col-4 ps-2 pe-2 descb-self">
 
-                <h3 class="mt-5">Hi there! I'm Kun034</h3>
-                <p class="fs-5 text-light">The Leader of Strategic Task Force 627 Org.</p>
-                <p class="text-secondary mb-4">
+                <h3 class="self-h3">Hi there! I'm Kun034</h3>
+                <h5 class="self-h5 text-light mb-3">The Leader of Strategic Task Force 627 Org.</h5>
+                <p class="self-p text-secondary">
                     Lorem ipsum dolor sit . Lorem ipsum dolor sit amet.
                     Lorem ipsum dolor sit . Lorem ipsum dolor sit amet.
                     Lorem ipsum dolor sit . Lorem ipsum dolor sit amet.
                 </p>
-                <p class="text-body-secondary">
-                    <img src="img/facebook.png" alt="" style="width: 50px; height: 50px;">
-                    <a class="link-opacity-50 link-offset-3 text-light ms-2" style="text-decoration: none;"
-                    href="https://www.facebook.com/ballname.net/">Chaiyut Tavon</a>
-                </p>
-                <p class="text-body-secondary">
-                    <img src="img/linkedin.png" alt="" style="width: 50px; height: 50px;">
-                    <a class="link-opacity-50 link-offset-3 text-light ms-2" style="text-decoration: none;"
-                    href="https://www.linkedin.com/in/chaiyut-thavon-kun/">ชัยยุตม์</a>
-                </p>
+                <div class="self-social text-body-secondary mb-3" >
+                    <a href="https://www.facebook.com/ballname.net/" target="_blank">
+                        <img src="img/facebook.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/chaiyut-thavon-kun/" target="_blank">
+                        <img src="img/linkedin.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/chaiyut-thavon-kun/" target="_blank">
+                        <img src="img/github-white1.png" alt="" >
+                    </a>
+                    <!-- <a class="link-opacity-50 link-offset-3 text-light ms-2" style="text-decoration: none;"
+                    href="">Chaiyut Tavon</a> -->
+                </div>
             </div>
             <!-- @right image -->
-            <div class="col p-3 ps-2 mt-5">
-                <img src="img/me.jpg" class="rounded-circle" alt="" >
+            <div class=" col-6 col-md-4 p-3 self-img
+                        d-flex justify-content-center align-items-center">
+                <a href=""">
+                    <img src="img/me.jpg" class="rounded-circle" alt="" >
+                </a>
             </div>
         </section>
 
@@ -49,22 +55,22 @@
 
             <div class="row mt-4">
 
-                <div class="col-4 inst-container mt-1 mb-2">
+                <div class="col-4 inst-items mt-1 mb-2">
                     <img class="" 
                     src="https://images.ctfassets.net/em6l9zw4tzag/oVfiswjNH7DuCb7qGEBPK/b391db3a1d0d3290b96ce7f6aacb32b0/python.png" alt="">
-                    <p><b>Python</b> for data science</p>
+                    <p><b>Python</b> data science</p>
                 </div>
-                <div class="col-4 inst-container mt-1 mb-2">
+                <div class="col-4 inst-items mt-1 mb-2">
                     <img src="https://miro.medium.com/v2/resize:fit:600/1*i2skbfmDsHayHhqPfwt6pA.png" alt="">
-                    <p><b>Go</b> for for backend-development</p>
+                    <p><b>Go</b> backend development</p>
                 </div>
-                <div class="col-4 inst-container mt-1 mb-2">
+                <div class="col-4 inst-items mt-1 mb-2">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="">
-                    <p><b>Postgresql</b> for Database management</p>
+                    <p><b>Postgresql</b> database management</p>
                 </div>
-                <div class="col-4 inst-container mt-1 mb-2">
+                <div class="col-4 inst-items mt-1 mb-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="">
-                    <p><b>Node.js</b> for backend-development</p>
+                    <p><b>Node.js</b> for backend development</p>
                 </div>
                 
             </div>
@@ -76,7 +82,7 @@
 
             <div class="row mt-4 mb-2">
 
-                <div class="col-4 inst-container work-container mt-1 mb-2 ">
+                <div class="col-4 inst-items work-container mt-1 mb-2 ">
                     <a href="https://chaiyut-kun.github.io/week2/calculator.html" target="_blank">
                         <img src="img/calculator.gif" alt="" class="rounded">
                     </a>

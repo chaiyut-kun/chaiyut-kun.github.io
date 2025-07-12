@@ -8,25 +8,76 @@
   color: white;
 }
 
-img {
-    width:  400px;
-    height: 400px;
+
+.container {
+
+  #welcome-h1 {
+    /* font-size: 40px; */
+    font-weight: bold;
+    text-align: center;
+  }
+
+    /* @==== section content ====@ */
+  .descb-self {
+
+    /* default */
     /* border: 1px solid red; */
+    margin-left: 200px;
+    margin-top: 36px;
+    
+    /* @=== subelements === */
+    .self-h3 {
+      margin-top: 28px;
+    }
+    .self-h5 {
+      font-size: 20px;
+    }
+    .self-p {
+      font-size: 16px;
+      width: 400px;
+    }
+  }
+  .self-img {
+    /* border: 1px solid red; */
+    margin-left: 100px;
+    margin-top: 30px;
+    img {
+      width : 300px ;
+      height: 300px ;
+
+    }
+
+  }
+
+  .self-social {
+    /* border: 1px solid red; */
+    /* width: 200px; */
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    gap:16px;
+    padding-top: 12px;
+
+  }
+  .self-social img {
+    width:  40px;
+    height: 40px;
+  }
+
+  
 }
 
-p {
-  width: 500px;
-}
-
-.inst-container {
+.inst-items {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items:center;
+  gap: 4px;
 
   /* border: 1px solid red; */
   
+  /* describe my self text */
   p {
     /* border: 1px solid red; */
     width: 300px;
@@ -48,15 +99,263 @@ p {
 }
 
 
-
 /* @========= Responsive =========@ */
 
 /* @========= Responsive 1200 width =========@ */
 
-@media only screen and (max-width: 1200px){
+
+/* @========= Responsive 1400 width =========@ */
+@media screen and (max-width: 1400px){
+  
+  /* @==== section content ====@ */
+  .self-section {
+
+    .descb-self {
+      /* margin:0; */
+      width: 500px;
+      
+      /* text-align: center; */
+      .self-h5 {
+        font-size: 20px;
+      }
+      .self-p {
+        font-size: 16px;
+        width: 450px;
+      }
+    }
+    
+    .self-img {
+      
+      /* border: 1px solid red; */
+      width: 400px;
+      
+      margin: 0;
+      padding:0;
+
+      img {
+        width : 450px;
+        height: 450px;
+      }
+
+    }
+
+  }
 
   .inst-h3 {
     text-align: center;
   }
+  #welcome-h1 {
+    font-size: 34px;
+  }
   
 }
+
+@media screen and (max-width: 1200px) {
+  
+  .inst-h3 {
+    text-align: center;
+  }
+  
+  #welcome-h1 {
+    font-size: 30px;
+    /* font-weight: light; */
+  }
+
+  /* @=== myself section content */
+  .self-section {
+
+    .descb-self {
+      margin: 0 80px;
+
+
+      .self-h3 {
+        font-size: 24px;
+      }
+      .self-h5 {
+        font-size: 16px;
+      }
+      .self-p {
+        font-size: 14px;
+      }
+    }
+    
+    .self-img {
+      
+      width: 250px;
+      
+      img { 
+        width : 300px;
+        height: 300px;
+      }
+    }
+  }
+
+}
+
+/* swap describe section layout to column */
+@media screen and (max-width: 1000px){
+  
+  #welcome-h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .container .self-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* describe */
+    .descb-self {
+      order: 2;
+      
+      margin: 0;
+      
+      padding-top: 0;
+      text-align: center;
+
+      .self-h3 {
+        margin-top: 10px;
+      }
+      .self-p {
+        margin: 0 auto;
+      }
+
+
+    }
+    /* image */
+    .self-img {
+      order: 1;
+      padding: 0;
+      /* img */
+      img{
+        width:  100px;
+        height: 100px;
+      }
+    }
+
+    .self-social {
+      margin: 0 auto;
+    }
+    
+  }
+
+  .inst-items {
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px){
+
+  /* @=== interestd sections */
+  .inst-h3 {
+    font-size: 20px;
+  }
+
+  .inst-items {
+    
+    p {
+      
+      width: 100px;
+      /* bold p */
+      b {
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+
+  /* @=== my works sections */
+  .work-container {
+    img {
+      width:  150px;
+      height: 150px;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+
+  /* @=== self section */
+  .container {
+    .descb-self .self-p {
+      margin-left: 10px;
+      font-size: 12px;
+      width: 400px;
+      
+    }
+  }
+  
+  /* @=== intereted section */
+  .inst-items {
+    img {
+      width:  80px;
+      height: 80px;
+    };
+  }
+  
+}
+
+@media screen and (max-width: 416px) {
+
+  /* [ Title of page ] */
+  #welcome-h1 {
+    font-size: 14px;
+  }
+  
+  .self-section .descb-self {
+    .self-h3 {
+      font-size: 18px;
+    }
+    .self-h5 {
+      font-size: 14px;
+    }
+  }
+  
+  .self-section .descb-self .self-p {
+    border: 1px solid red;
+    width: 300px;
+  }
+  
+  .self-img img 
+  {
+    width:  30px;
+    height: 30px;
+  }
+    
+    /* @=== self section */
+    .self-section .self-social 
+    {
+      padding-top: 10px;
+      margin: 0 auto;
+      justify-content: center;
+      width: 250px;
+    }
+    
+    .self-section .self-social img 
+    {
+      width:  20px;
+      height: 20px;
+    }
+
+    /* @= [interested section] =@ */
+    .inst-h3
+    {
+      font-size: 16px;
+    }
+    .inst-items p 
+    {
+      width: 80px;
+      font-size: 10px;
+    }
+    .inst-items img {
+      width:  80px;
+      height: 80px;
+    }
+
+}
+
