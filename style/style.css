@@ -55,7 +55,7 @@
     display: flex;
     width: fit-content;
     justify-content: space-between;
-    gap:16px;
+    gap:30px;
     padding-top: 12px;
 
   }
@@ -317,7 +317,6 @@
   }
   
   .self-section .descb-self .self-p {
-    border: 1px solid red;
     width: 300px;
   }
   
@@ -338,8 +337,8 @@
     
     .self-section .self-social img 
     {
-      width:  20px;
-      height: 20px;
+      width:  25px;
+      height: 25px;
     }
 
     /* @= [interested section] =@ */
@@ -357,5 +356,10 @@
       height: 80px;
     }
 
+    .work-container img{
+      width:  120px;
+      height: 120px;
+    }
+    
 }
 
